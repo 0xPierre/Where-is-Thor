@@ -19,7 +19,8 @@ export const useLevelsStore = defineStore({
 
     actions: {
         loseGameByTime() {
-            clearInterval(this.timerInterval)
+            if (this.timerInterval)
+                clearInterval(this.timerInterval)
             this.inGame = false
             router.push('/game-over')
         },
@@ -28,6 +29,7 @@ export const useLevelsStore = defineStore({
             this.timer = 180
             this.level = 1
             this.totalClues = 0
+            // @ts-ignore
             this.timerInterval = setInterval(() => {
                 this.timer--
                 if (this.timer === 0) {
@@ -37,7 +39,8 @@ export const useLevelsStore = defineStore({
             this.level = 1
         },
         winGame() {
-            clearInterval(this.timerInterval)
+            if (this.timerInterval)
+                clearInterval(this.timerInterval)
             this.inGame = false
             router.push('/win')
         },

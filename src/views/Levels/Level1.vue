@@ -63,7 +63,7 @@ const showClue = () => {
     }, 4000)
 }
 
-const onClick = (event: PointerEvent) => {
+const onClick = (event: MouseEvent) => {
     trials.value += 1
     if (event.target === image.value) {
         modalSuccess.value = true
@@ -191,5 +191,6 @@ img.to-find {
     position: absolute;
     width: 3rem;
     user-select: none;
+    z-index: 100;
 }
 </style>
