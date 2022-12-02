@@ -34,16 +34,16 @@ const randomPositionImage = () => {
     if (!image.value)
         return
 
-    const backgroundImg = document.querySelector('.background') as HTMLDivElement;
+    const backgroundImg = document.querySelector('.background') as HTMLDivElement
 
-    pos_x.value = getRandomCoordBetween(0, backgroundImg.clientWidth - 100);
-    pos_y.value = getRandomCoordBetween(300, backgroundImg.clientHeight - 100);
+    pos_x.value = getRandomCoordBetween(0, backgroundImg.clientWidth - 100)
+    pos_y.value = getRandomCoordBetween(300, backgroundImg.clientHeight - 100)
 
-    pos_x.value = pos_x.value + image.value.clientWidth / 2;
-    pos_y.value = pos_y.value + image.value.clientHeight / 2;
+    pos_x.value = pos_x.value + image.value.clientWidth / 2
+    pos_y.value = pos_y.value + image.value.clientHeight / 2
 
-    image.value.style.left = `${pos_x.value}px`;
-    image.value.style.top = `${pos_y.value}px`;
+    image.value.style.left = `${pos_x.value}px`
+    image.value.style.top = `${pos_y.value}px`
 }
 
 onMounted(() => {
@@ -85,7 +85,6 @@ const onClick = (event: MouseEvent) => {
         audio.play()
     }
 }
-
 </script>
 
 <template>
@@ -184,6 +183,8 @@ h1.level-title {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    opacity: 0;
+    transition: all .3s ease-in-out;
 }
 
 img.to-find {
