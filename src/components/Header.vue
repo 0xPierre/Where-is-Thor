@@ -14,7 +14,10 @@ const levelsStore = useLevelsStore()
         {{ title }}
     </h1>
     <div class="level">
-        Niveau {{ levelsStore.level }} sur 4
+        <span>
+            Niveau {{ levelsStore.level }} sur 4
+        </span>
+        <div class="progress-bar" :style="`width: ${levelsStore.level / 4 * 100}%;`" />
     </div>
 </template>
 
@@ -29,6 +32,21 @@ const levelsStore = useLevelsStore()
     font-size: 1.5rem;
     font-weight: 600;
     z-index: 1;
+
+    span {
+        z-index: 4;
+    }
+
+    .progress-bar {
+        width: 25%;
+        height: 100%;
+        background-color: rgba(255, 221, 0, 0.766);
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: var(--border-radius);
+        z-index: 3;
+    }
 }
 
 .timer {

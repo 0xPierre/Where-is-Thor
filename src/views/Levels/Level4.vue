@@ -37,7 +37,7 @@ const randomPositionImage = () => {
     const backgroundImg = document.querySelector('.background') as HTMLDivElement;
 
     if (Math.random() > 0.5) {
-        pos_x.value = getRandomCoordBetween(-50, 0)
+        pos_x.value = getRandomCoordBetween(30, 60)
         pos_y.value = getRandomCoordBetween(backgroundImg.clientHeight / 2 - 50, backgroundImg.clientHeight / 2)
     } else {
         pos_x.value = getRandomCoordBetween(backgroundImg.clientWidth - 300, backgroundImg.clientWidth - 200)

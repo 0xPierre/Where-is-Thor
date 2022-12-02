@@ -24,7 +24,7 @@ const modalFailed = ref<boolean>(false)
 const modalSuccess = ref<boolean>(false)
 const nextLevelIn = ref<number>(5)
 
-const audios = ['/records/record_1.mp3', '/records/record_2.mp3', '/records/record_3.mp3']
+const audios = ['/records/record_4.aac']
 const getRandomAudio = () => audios[Math.floor(Math.random() * audios.length)]
 
 const trials = ref(0)

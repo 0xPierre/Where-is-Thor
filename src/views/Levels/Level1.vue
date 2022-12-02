@@ -191,6 +191,6 @@ img.to-find {
     position: absolute;
     width: 3rem;
     user-select: none;
-    z-index: 100;
+    z-index: 10;
 }
 </style>
