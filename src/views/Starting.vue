@@ -22,12 +22,15 @@ const startGame = () => {
             <div class="item" @click="startGame">
                 Demarrer une partie
             </div>
+            <RouterLink class="item" to="/ranking">
+                Voir le classement
+            </RouterLink>
         </div>
 
-        <div class="sound">
+        <!-- <div class="sound">
             <vue-feather :type="isSoundActivated ? 'volume-2' : 'volume-x'" size="3.5rem"
                 @click="(isSoundActivated = !isSoundActivated)" />
-        </div>
+        </div> -->
     </div>
 </template>
 

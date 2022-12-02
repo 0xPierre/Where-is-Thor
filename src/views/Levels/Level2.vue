@@ -78,6 +78,7 @@ const onClick = (event: MouseEvent) => {
         }, 1000)
     } else {
         modalFailed.value = true
+        levelsStore.totalClues += 1
 
         if (trials.value % 3 === 0) {
             randomPositionImage()

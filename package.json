@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.27.2",
     "feather-icons": "^4.29.0",
+    "firebase": "^9.14.0",
     "pinia": "^2.0.17",
     "vue": "^3.2.37",
     "vue-feather": "^2.0.0",

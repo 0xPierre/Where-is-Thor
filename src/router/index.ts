@@ -19,9 +19,9 @@ const router = createRouter({
 			component: () => import('../views/GameOver.vue'),
 		},
 		{
-			path: '/win',
-			name: 'win',
-			component: () => import('../views/Win.vue'),
+			path: '/ranking',
+			name: 'ranking',
+			component: () => import('../views/Ranking.vue'),
 		},
 	]
 })

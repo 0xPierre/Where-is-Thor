@@ -4,11 +4,17 @@ const { title } = defineProps<{ title: string }>()
 
 const levelsStore = useLevelsStore()
 
+const secondesToMinutesAndSecondString = (secondes: number) => {
+    const minutes = Math.floor(secondes / 60)
+    const secondesRestantes = secondes % 60
+    return `${minutes} minute${minutes > 1 ? 's' : ''} et ${secondesRestantes} seconde${secondesRestantes > 1 ? 's' : ''}`
+}
+
 </script>
 
 <template>
     <div class="timer">
-        {{ levelsStore.timer }}
+        {{ secondesToMinutesAndSecondString(levelsStore.timer) }}
     </div>
     <h1 class="level-title">
         {{ title }}
