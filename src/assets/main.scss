@@ -1,0 +1,47 @@
+@import "./base.css";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    position: relative;
+    font-weight: normal;
+}
+
+body {
+    line-height: 1.6;
+    font-family: 'MARVEL', 'sans-serif';
+    font-weight: 400;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: var(--text-color);
+    height: 100%;
+    letter-spacing: 5px;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+
+// .font-text {
+//     font-family: 'Oswald-Regular';
+//     letter-spacing: 2px;
+// }
+
+#app {
+    height: 100%;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--primary-color-darker);
+}
+
+*:focus {
+    outline: #ff0000 auto 1px
+}

@@ -1,0 +1,20 @@
+:root {
+	--primary-color: #fff;
+	--background-color: #ff0000;
+	--border-radius: .9rem;
+}
+
+
+@font-face {
+	font-family: 'MARVEL';
+	font-style: normal;
+	font-weight: 400;
+	src: url('@/assets/fonts/AVENGEANCE HEROIC AVENGER.ttf');
+}
+
+@font-face {
+	font-family: 'Oswald-Regular';
+	font-style: normal;
+	font-weight: 400;
+	src: url('@/assets/fonts/Oswald-Regular.ttf');
+}
