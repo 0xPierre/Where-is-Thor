@@ -183,8 +183,6 @@ h1.level-title {
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-    opacity: 0;
-    transition: all .3s ease-in-out;
 }
 
 img.to-find {
