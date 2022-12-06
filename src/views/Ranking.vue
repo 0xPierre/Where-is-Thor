@@ -15,7 +15,7 @@ const username = ref('')
 const levelsStore = useLevelsStore()
 
 const getUsers = async () => {
-    const q = query(collection(db, 'scores'), orderBy('score', 'desc'), limit(5))
+    const q = query(collection(db, 'scores'), orderBy('score', 'asc'), limit(5))
     const querySnapshot = await getDocs(q)
     users.value = []
     querySnapshot.forEach((doc) => {
