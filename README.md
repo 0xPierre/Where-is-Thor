@@ -4,7 +4,7 @@
 The goal is to find the requested marvel character on the image.
 [https://mais-ou-est-donc-thor.netlify.app](https://mais-ou-est-donc-thor.netlify.app).
 
-![image](https://github.com/0xPierre/Ou-est-thor/assets/64857347/8ec50900-50f6-46cc-9269-e2ebf3ef44da)
+![image](https://github.com/0xPierre/Where-is-Thor/assets/64857347/feaf0bad-c920-47f2-8bed-0c8600c030bf)
 
 # Readme for review by the company : La chasse aux héros
 
