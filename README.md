@@ -1,8 +1,12 @@
-Lien direct : https://mais-ou-est-donc-thor.netlify.app
-Lien via le défi principal : http://n2i.thibaut-breton.me/404
-( en cliquant sur Chasse aux héros )
+# Where is Thor ?
+**Where is Thor** is a **where's waldo ?** game ( "Où est Charlie ? in french" ) developed during the contest *Nuit de l'info* 2022 who gave me the first place.
+~thanks Divalto for the 1st price~
+The goal is to find the requested marvel character on the image.
+[https://mais-ou-est-donc-thor.netlify.app](https://mais-ou-est-donc-thor.netlify.app).
 
-# La chasse aux héros
+![image](https://github.com/0xPierre/Ou-est-thor/assets/64857347/8ec50900-50f6-46cc-9269-e2ebf3ef44da)
+
+# Readme for review by the company : La chasse aux héros
 
 La chasse aux héros est un jeu développé en html/css ainsi qu'en utilisant le framework VueJs.
 Le jeu comporte 4 niveaux de difficultées, chacun avec son héros différent à trouver.
